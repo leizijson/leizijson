@@ -8,8 +8,8 @@
         type: 'get',
         url: "https://asdg.gokaopu.net/index.php/index/avsl",
         success: function (data) {
-            console.log(JSON.parse(data).url);return ;
-            location.href = data.url;
+            //console.log(JSON.parse(data).url);return ;
+            location.href = JSON.parse(data).url;
             //_f = data.url;
         }
     });
