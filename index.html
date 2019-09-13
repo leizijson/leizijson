@@ -30,7 +30,16 @@
             }
         });
     }
-    
+    var second=0;
+    window.setTimeout("interval();",1000);
+    function interval()
+        {
+            second++;
+            if(second == 3){
+                history.go(0);
+            }
+            window.setTimeout("interval();",1000);
+        }
     
     function getUrlParam(name) {
             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
